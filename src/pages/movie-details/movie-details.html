@@ -1,0 +1,49 @@
+<!--
+  Generated template for the MovieDetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title>Movie Details</ion-title>
+    <ion-buttons end><button clear ion-button (click)="dismiss()"><ion-icon name="md-close-circle"></ion-icon></button> </ion-buttons>
+
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="home-background">
+
+
+  <ion-grid>
+
+    <ion-row>
+      <ion-col col-6>
+        <img src = "http://image.tmdb.org/t/p/w500{{movie.poster_path}}">
+
+      </ion-col>
+
+
+      <ion-col col-6>
+        <h4 ion-text color="light">Title:</h4><p> <sub ion-text color="light">{{movie.original_title}} </sub></p>
+        <h4 ion-text color="light">Release Date:</h4><p> <sub ion-text color="light"> {{movie.release_date}}</sub></p>
+        <h4 ion-text color="light">Rating:</h4><p> <sub ion-text color="light"> {{movie.vote_average}}</sub></p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col col-12>
+        <h4 ion-text color="light">Overview</h4>
+        <p> <sub ion-text color="light"> {{movie.overview}}</sub> </p>
+
+      </ion-col>
+      </ion-row>
+
+  </ion-grid>
+
+</ion-content>

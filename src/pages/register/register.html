@@ -1,0 +1,47 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="home-background">
+
+
+  <ion-item class="change-item">
+
+
+    <ion-label color="light" floating >Email Address</ion-label>
+    <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+  </ion-item>
+
+  <ion-item class="change-item">
+  <ion-label color="light" floating>Password</ion-label>
+  <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+
+</ion-item>
+
+<p></p>
+
+   <button  ion-button block color="danger" (click)="register()">Register</button>
+  <p>By clicking the button "Register", and creating your account, you are agreeing
+  with our Terms of Service and Privacy Policy.</p>
+
+  <ion-list>
+
+    <button ion-item color="danger" (click)="openWithSystemBrowser('https://www.techiediaries.com/inappbrowser-ionic-v3/')">
+      <ion-icon icon-right name="information-circle"></ion-icon> Terms of Service</button>
+    <button ion-item color="danger" (click)="openWithSystemBrowser('https://termsfeed.com/terms-service/generator/')"><ion-icon icon-right name="information-circle"></ion-icon> Privacy Policy </button>
+
+
+  </ion-list>
+
+</ion-content>
